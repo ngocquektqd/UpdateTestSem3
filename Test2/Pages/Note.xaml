@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Test2.Pages.Note"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Test2.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="createNote" AcceptsReturn="True" TextWrapping="Wrap"
+         MaxHeight="172" Width="300" Header="New Note"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+            <HyperlinkButton Foreground="Green" Click="ButtonClick_SaveAsyn">Save</HyperlinkButton>
+        </StackPanel>
+        <Frame x:Name="frameCreateNote"></Frame>
+
+    </Grid>
+</Page>

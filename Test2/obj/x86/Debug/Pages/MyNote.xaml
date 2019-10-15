@@ -1,0 +1,32 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="Test2.Pages.MyNote"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Test2.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <Button x:ConnectionId='2'                                >Create Note</Button>
+            <RelativePanel Margin="0 20">
+                <ListBox x:ConnectionId='4'  x:Name="NoteList"                               Height="300" Width="150"
+                                                     
+                />
+                <TextBox x:ConnectionId='5' AcceptsReturn="True" x:Name="Note" Margin="10 0 0 0" RelativePanel.RightOf="NoteList" TextWrapping="Wrap"
+                         MaxHeight="200" Width="300" Header="Show Note"
+                />
+
+
+            </RelativePanel>
+            <Button x:ConnectionId='3'                     >Save</Button>
+
+
+
+        </StackPanel>
+
+    </Grid>
+</Page>
+
